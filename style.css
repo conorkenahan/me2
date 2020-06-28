@@ -1,0 +1,142 @@
+
+/* main styles */
+
+
+h2 {
+  color: #E0DDCF;
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+  color: #E0DDCF;
+  font-size: 150%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p, ul, ol {
+  color: #E0DDCF;
+  font-size: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: #474448;
+}
+
+img {
+  width:100%;
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+
+/* header */
+
+header {
+  background-color: #474448;
+}
+
+header h1 {
+  color: #E0DDCF;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 8px;
+}
+
+
+/* classes */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  border: 3px solid #F1F0EA;
+  padding: 10px;
+}
+
+/* groups and items - mobile first */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex:1;
+  margin: 10px;
+}
+
+.item-double{
+  flex:2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* article sections*/
+
+#home, #portfolio, #contact, #about {
+  margin-bottom:120px;
+}
+
+
+
+
+/* gap classes*/
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+.bg-accent{
+  background-color: #F1F0EA;
+}
+
+/* links */
+
+a:link { color: #5dc4ad; }
+a:visited { color: #38786a; }
+a:hover { color: #9c9b9a; }
+a:active { color: #403933; }
